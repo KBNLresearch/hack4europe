@@ -20,12 +20,12 @@
 				spinner: "viewSpinner",
 				tabs: "viewTabs"
 			});
-			var portalSearch = new PortalSearch("[enter API key here]", {
+			var portalSearch = new PortalSearch("[Enter Europeana API key here]", {
 				resultBox: "searchResults",
 				spinner: "searchSpinner",
 				callback: function(link) { objectView.show(link); alchemy.setRecordId(link); }
 			});
-			var alchemy = new AlchemyProto("[enter API key here]");
+			var alchemy = new AlchemyProto("[Enter Alchemy API key here]");
 
 			function onFeed(msg) {
 				if(msg && msg.data) {
