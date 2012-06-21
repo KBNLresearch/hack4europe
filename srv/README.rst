@@ -45,3 +45,6 @@ The examples below are actually paginated to protect your browser from crashing 
 
 - Requesting specific fields: `/db/named_entities?fields[]=recordId&fields[]=type  <http://hack4europe.kbresearch.nl/db/named_entities?limit=10&fields[]=recordId&fields[]=type>`_
 
+- Querying on a specific field: `/db/named_entities?type=HealthCondition <http://hack4europe.kbresearch.nl/db/named_entities?limit=10&type=HealthCondition>`_
+
+
