@@ -3,7 +3,7 @@ More about the database
 
 Description
 ----------
-The portal's database can be approached with RESTful ajax calls, which are handles by the mongo-by-params module. Storing records can only be done with local POST messages, querying can be done cross-domain as well, using JSONP
+The portal's database can be approached with RESTful ajax calls, which are handled by the mongo-by-params module. Storing records can only be done with local POST messages, querying can be done cross-domain as well, using JSONP
 
 
 Querying through REST
@@ -50,3 +50,8 @@ The examples below are actually paginated to protect your browser from crashing 
 - Querying on a nested field with a custom operator: `/db/geolocations?geo.lat[$gte]=44 <http://hack4europe.kbresearch.nl/db/geolocations?limit=10&geo.lat[$gte]=44>`_
 
 - Mixing it all together: `/db/geolocations?limit=3&offset=2&callback=myMap.plotEuropeanaRecords&geo.lat[$gte]=40&geo.lat[$lte]=45&geo.lon[$gte]=0&geo.lon[$lte]=20&fields[]=geo&fields[]=recordId <http://hack4europe.kbresearch.nl/db/geolocations?limit=3&offset=2&callback=myMap.plotEuropeanaRecords&geo.lat[$gte]=40&geo.lat[$lte]=45&geo.lon[$gte]=0&geo.lon[$lte]=20&fields[]=geo&fields[]=recordId>`_
+
+Storing and Updating
+---------
+
+Look for examples in the `client side code <https://github.com/renevanderark/hack4europe/tree/master/client>`_.
