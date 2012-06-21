@@ -27,5 +27,4 @@ On a Ubuntu/Debian distribution with Aptitude the ./go.sh shell script should ru
 
 More on the Project
 -------------------
-The portal uses a mongodb installment to store user's contributions. New records can be added through RESTful local-domain ajax calls, querying on the database can be done cross-domain as well, using JSONP. `More about the database <https://github.com/renevanderark/hack4europe/tree/master/srv>`_.
-
+The portal uses a mongodb installment to store user's contributions. New records can be added through RESTful local-domain ajax calls, querying on the database can be done cross-domain as well, using JSONP. `More about the database <https://github.com/renevanderark/hack4europe/tree/master/srv>`_. For instructions on how to let client code talk to the db go `here <https://github.com/renevanderark/hack4europe/tree/master/client>`_
