@@ -32,7 +32,16 @@ The fields parameter is actually an array parameter and so can be passed multipl
 
 		?fields[]=fieldname1&fields[]=fieldname2
 
-Not passing any parameters gives the entire collection, without pagination. The example below is actually paginated to protect your browser from crashing when clicking on it:
-- `/db/named_entities <http://hack4europe.kbresearch.nl/db/named_entities?limit=10>`_
+Examples
+-------
 
+The examples below are actually paginated to protect your browser from crashing when clicking on it:
+
+- Viewing the entire collection: `/db/named_entities <http://hack4europe.kbresearch.nl/db/named_entities?limit=10>`_
+
+- Changing the limit and offset: `/db/named_entities?limit=10&offset=10  <http://hack4europe.kbresearch.nl/db/named_entities?limit=10&offset=10>`_
+
+- Defining a JSONP callback:  `/db/named_entities?callback=myns.myfunc  <http://hack4europe.kbresearch.nl/db/named_entities?limit=10&callback=myns.myfunc>`_
+
+- Requesting specific fields: `/db/named_entities?fields[]=recordId&fields[]=type  <http://hack4europe.kbresearch.nl/db/named_entities?limit=10&fields[]=recordId&fields[]=type>`_
 
