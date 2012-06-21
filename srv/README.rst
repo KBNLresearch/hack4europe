@@ -47,4 +47,4 @@ The examples below are actually paginated to protect your browser from crashing 
 
 - Querying on a specific field: `/db/named_entities?type=HealthCondition <http://hack4europe.kbresearch.nl/db/named_entities?limit=10&type=HealthCondition>`_
 
-
+- Querying on a nested field with a custom operator: `/db/geolocations?geo.lat[$gte]=44 <http://hack4europe.kbresearch.nl/db/geolocations?limit=10&geo.lat[$gte]=44>`_
