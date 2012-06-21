@@ -42,7 +42,9 @@ Another example from the project::
 		}
 	});
 
-Querying the db using ajax is done asynchronously, because stuff gets streamed, so you need the entire block of data to make sure everything is in before another you do another query call that messes up the first call... Believe me, it happens::
+Querying the db using ajax 
+----
+...is done asynchronously, because stuff gets streamed, so you need the entire block of data to make sure everything is in before another you do another query call that messes up the first call... Believe me, it happens::
 
 	$.ajax("db/geolocations", {
 		async: false,
