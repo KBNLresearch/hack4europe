@@ -23,7 +23,7 @@ On a Ubuntu/Debian distribution with Aptitude the ./go.sh shell script should ru
 
     $ sudo ./go.sh
 
-- If everything went well, the portal can be vistied locally at your `local host on port 8000 <http://localhost:8000/>`_.
+- If everything went well, the portal can be visited locally at your `local host on port 8000 <http://localhost:8000/>`_.
 
 More on the Project
 -------------------
