@@ -159,17 +159,24 @@ var find = function() {
 			fields[rawFields[i]] = true;
 
 		for(key in params) {
-			if(key != "fields") 
+			if(key != "fields" && key != "offset" && key != "limit" && key != "_" && key != "callback") 
 				searchParams[key] = parseParam(key, params[key]);
 		}
 		var coll = new db.collection(resource);
 		jsonHeader(200);
+		if(params["callback"])
+			res.write(params["callback"] + "(");
 		res.write("[");
-		coll.find(searchParams, fields).forEach(function(err, doc) {
+		var cursor = coll.find(searchParams, fields);
+		if(params["limit"] && params["limit"].match(/[0-9]+/))
+			cursor.limit(parseInt(params["limit"]));
+		if(params["offset"] && params["offset"].match(/[0-9]+/))
+			cursor.skip(parseInt(params["offset"]));
+		cursor.forEach(function(err, doc) {
 			if(doc) {
 				writeResponse(doc, false, {postFix: ","});
 			} else {
-				endResponse(null, false, {postFix: "]"});
+				endResponse(null, false, {postFix: "]" + (params["callback"] ? ");" : "") });
 			}
 		});
 	} else
