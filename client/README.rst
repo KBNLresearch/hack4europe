@@ -5,7 +5,7 @@ The portal's activities.
 
 Adding the API keys
 -------------------
-In order for the portal to actually do anything with the remote API's two API keys need to be entered in the file `client/index.html <https://github.com/renevanderark/hack4europe/blob/master/client/index.html>`_. The Europeana API key goes on `line 23 <https://github.com/renevanderark/hack4europe/blob/master/client/index.html#L23>`_. And the Alchemy API key (which is restricted to non-profit research activity) goes on `line 28 <https://github.com/renevanderark/hack4europe/blob/master/client/index.html#L23>`_.
+In order for the portal to actually do anything with the remote API's two API keys need to be entered in the file `index.html <https://github.com/renevanderark/hack4europe/blob/master/client/index.html>`_. The Europeana API key goes on `line 23 <https://github.com/renevanderark/hack4europe/blob/master/client/index.html#L23>`_. And the Alchemy API key (which is restricted to non-profit research activity) goes on `line 28 <https://github.com/renevanderark/hack4europe/blob/master/client/index.html#L23>`_.
 
 Storing a record to the database
 ---------------
